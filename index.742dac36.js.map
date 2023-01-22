@@ -1,1 +1,0 @@
-{"mappings":"YAGgBA,SAASC,cAAc,eACvCC,QAAQC,IAAI,Q","sources":["src/index.js"],"sourcesContent":["import './css/styles.css';\n\nconst DEBOUNCE_DELAY = 300;\nconst inputEl = document.querySelector(\"#search-box\");\nconsole.log(\"Hello\");"],"names":["document","querySelector","console","log"],"version":3,"file":"index.742dac36.js.map"}
