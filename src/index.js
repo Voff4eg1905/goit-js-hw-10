@@ -46,14 +46,14 @@ function renderCountry(country) {
     languagesList += `<li class="language">${language.name}</li>`;
   });
 
-  return (countryInfoEl.innerHTML = ` <img src="${flags.svg}" alt="${name}"> <h1 class = "country_name">${name}</h1>
+  return countryInfoEl.innerHTML = ` <img src="${flags.svg}" alt="${name}"> <h1 class = "country_name">${name}</h1>
 <p>Capital: ${capital} </p>
 <p>Population: ${population} </p>
 <p> Languages: </p>
 
 <ul class="languages"> 
 ${languagesList}
-   </ul>`);
+   </ul>`;
 }
 
 function renderListOfCountries(list) {
@@ -62,6 +62,5 @@ function renderListOfCountries(list) {
   const countriesList = list.map(({ name, flags: { svg } }) => {
     renderedList += `<li class="country"><img src="${svg}" alt="${name}"> ${name}</li>`;
   });
-  countryListEl.innerHTML = renderedList;
-  console.log(renderedList);
+  return countryListEl.innerHTML = renderedList;
 }
